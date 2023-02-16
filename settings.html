@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="task 3 from Elzero Web School">
+    <!--=============== BootsTrap ===============-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--=============== Animate ===============-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--=============== NORMALIZE ===============-->
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Settings</title>
+</head>
+
+<body>
+    <div class="body d-flex">
+        <!--=============== SIDEBAR ===============-->
+        <div class="sidebar">
+            <div class="container">
+                <div class="sidebar-content">
+                    <div class="logo text-center">
+                        <a href="#">Elzero</a>
+                    </div>
+                    <ul class="list-unstyled d-flex flex-column">
+                        <li>
+                            <a href="index.html" class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-chart-bar"></i>
+                                </div>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="settings.html" class="d-flex active">
+                                <div class="icon">
+                                    <i class="fa-solid fa-gear"></i>
+                                </div>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                </div>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="courses.html" class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <span>Courses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="friends.html" class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </div>
+                                <span>Friends</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="files.html" class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-regular fa-file"></i>
+                                </div>
+                                <span>Files</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="plans.html" class="d-flex">
+                                <div class="icon">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                </div>
+                                <span>Plans</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--=============== PAGE ===============-->
+        <div class="page w-100">
+            <!--=============== HEADER ===============-->
+            <div class="header py-3">
+                <div class="container">
+                    <div class="header-content d-flex justify-content-between align-items-center">
+                        <div class="form">
+                            <input type="text" placeholder="Type A Keyword">
+                        </div>
+                        <div class="icons d-flex align-items-center">
+                            <div class="profile-icon">
+                                <i class="fa-sharp fa-regular fa-bell"></i>
+                            </div>
+                            <div class="profile-img">
+                                <img src="assets/imgs/avatar.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=============== MAIN ===============-->
+            <div class="main sett">
+                <div class="container">
+                    <div class="main-content">
+                        <h1 class="main-title">Settings</h1>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="col-content site-control bg-white">
+                                    <div class="col-head d-flex flex-column gap-3">
+                                        <h2>Site Control</h2>
+                                        <p class="text-black-50">Control The Website If There Is Maintenance</p>
+                                    </div>
+                                    <div class="col-body">
+                                        <div class="body-content d-flex align-items-center  justify-content-between">
+                                            <div class="info">
+                                                <h5>Website Control</h5>
+                                                <span class="text-black-50">
+                                                    Open/Close Website And Type The Reason
+                                                </span>
+                                            </div>
+                                            <label for="cheicon" class="">
+                                                <input type="checkbox" name="" id="cheicon" checked>
+                                                <div class="checkbox-icon"></div>
+                                            </label>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="7" class="w-100"
+                                            placeholder="Close Message Content"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-content general-info bg-white">
+                                    <div class="col-head d-flex flex-column gap-3">
+                                        <h2>General Info</h2>
+                                        <p class="text-black-50">General Information About Your Account</p>
+                                    </div>
+                                    <div class="col-body">
+                                        <div action="" class="form d-flex flex-column">
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="fname" class="d-block">First Name</label>
+                                                <input type="text" class="w-100" id="fname" placeholder="First Name">
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="lname" class="d-block">Last Name</label>
+                                                <input type="text" class="w-100" id="lname" placeholder="Last Name">
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="email" class="d-block">Email</label>
+                                                <div
+                                                    class="change d-flex gap-1 justify-content-between align-items-center">
+                                                    <input type="email" id="email" class="w-100" placeholder="o@nn.sa"
+                                                        disabled>
+                                                    <input type="submit" value="Change">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-content site-control security-info bg-white">
+                                    <div class="col-head d-flex flex-column gap-3">
+                                        <h2>Security Info</h2>
+                                        <p class="text-black-50">Security Information About Your Account</p>
+                                    </div>
+                                    <div class="col-body">
+                                        <div class="body-content d-flex flex-column">
+                                            <div class="item d-flex align-items-center justify-content-between">
+                                                <div class="info">
+                                                    <h5>Password</h5>
+                                                    <span class="text-black-50">
+                                                        Last Change On 25/10/2021
+                                                    </span>
+                                                </div>
+                                                <a href="#" class="btn">Change</a>
+                                            </div>
+                                            <div class="item d-flex align-items-center justify-content-between">
+                                                <div class="info">
+                                                    <h5>Two-Factor Authentication</h5>
+                                                    <span class="text-black-50">
+                                                        Enable/Disable The Feature
+                                                    </span>
+                                                </div>
+                                                <label for="che">
+                                                    <input type="checkbox" name="" id="che" checked>
+                                                    <div class="checkbox-icon"></div>
+                                                </label>
+                                            </div>
+                                            <div class="item d-flex align-items-center justify-content-between">
+                                                <div class="info">
+                                                    <h5>Devices</h5>
+                                                    <span class="text-black-50">
+                                                        Check The Login Devices List
+                                                    </span>
+                                                </div>
+                                                <a href="#" class="btn device">Devices</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-content social-info bg-white">
+                                    <div class="col-head d-flex flex-column gap-3">
+                                        <h2>Social Info</h2>
+                                        <p class="text-black-50">Social Media Information</p>
+                                    </div>
+                                    <div class="col-body">
+                                        <div class="body-content d-flex flex-column">
+                                            <div class="item d-flex align-items-center">
+                                                <input type="text" placeholder="Twitter Username">
+                                                <div class="icon">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="text" placeholder="Facebook Username">
+                                                <div class="icon">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="text" placeholder="Linkedin Username">
+                                                <div class="icon">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="text" placeholder="Youtube Username">
+                                                <div class="icon">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-content widgets-control bg-white">
+                                    <div class="col-head d-flex flex-column gap-3">
+                                        <h2>Widgets Control</h2>
+                                        <p class="text-black-50">Show/Hide Widgets</p>
+                                    </div>
+                                    <div class="col-body">
+                                        <div class="body-content d-flex flex-column">
+                                            <div class="item d-flex align-items-center">
+                                                <input type="checkbox" id="draft" checked>
+                                                <label for="draft">Quick Draft</label>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="checkbox" id="targets" checked>
+                                                <label for="targets">Yearly Targets</label>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="checkbox" id="statisticst" checked>
+                                                <label for="statisticst">Tickets Statisticst</label>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="checkbox" id="news" checked>
+                                                <label for="news">Latest News</label>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="checkbox" id="tasks">
+                                                <label for="tasks">Latest Tasks</label>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="checkbox" id="top-search" checked>
+                                                <label for="top-search">Top Search Items</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-content backup-manager bg-white">
+                                    <div class="col-head d-flex flex-column gap-3">
+                                        <h2>Backup Manager</h2>
+                                        <p class="text-black-50">Control Backup Time And Location</p>
+                                    </div>
+                                    <div class="col-body">
+                                        <div class="body-content d-flex flex-column">
+                                            <div class="item d-flex align-items-center">
+                                                <input type="radio" name="manage" id="daily" checked>
+                                                <label for="daily">Daily</label>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="radio" name="manage" id="weekly">
+                                                <label for="weekly">Weekly</label>
+                                            </div>
+                                            <div class="item d-flex align-items-center">
+                                                <input type="radio" name="manage" id="monthly">
+                                                <label for="monthly">Monthly</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-footer row">
+                                        <div class="col-md-4 mb-2">
+                                            <input type="radio" name="servers" id="ser1" checked>
+                                            <label for="ser1" class="d-flex flex-column text-center gap-2">
+                                                <i class="fa-solid fa-server"></i>
+                                                Megaman
+                                            </label>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <input type="radio" name="servers" id="ser2">
+                                            <label for="ser2" class="d-flex flex-column text-center gap-2">
+                                                <i class="fa-solid fa-server"></i>
+                                                Zero
+                                            </label>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <input type="radio" name="servers" id="ser3">
+                                            <label for="ser3" class="d-flex flex-column text-center gap-2">
+                                                <i class="fa-solid fa-server"></i>
+                                                Sigma
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/all.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+
+</html>

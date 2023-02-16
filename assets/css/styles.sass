@@ -1,0 +1,662 @@
+
+// =============== GOOGLE FONTS ===============
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap')
+/*=============== 1- components --> Colors , --> mixins , etc... ===============*/
+@import 'components'
+
+/*=============== 2- General Style ===============*/
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+a
+    text-decoration: none
+
+h1,h2,h3,h4,h5,h6
+    margin: 0
+p
+    margin: 0
+
+img
+    width: 100%
+
+ul
+    margin: 0
+
+.container
+    height: 100%
+
+span.btn
+    width: fit-content
+    background: #eee
+    padding: 3px 10px
+    font-size: 0.85rem
+    margin-bottom: 5px
+
+@keyframes changeBG
+    0%
+        background: #ffff
+    100%
+        background: $blue-color
+
+body
+    scroll-behavior: smooth
+    user-select: none
+    font-family: "Cairo", sans-serif
+    .body
+        min-height: 100vh
+        .sidebar
+            background: #fff
+            box-shadow: 0 0 13px rgba(0, 0, 0, 0.13)
+            // margin-right: 10px
+            width: 250px
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+            .sidebar-content
+                height: 100%
+                padding: 7px 0
+                .logo
+                    width: fit-content
+                    margin: 0 auto
+                    padding: 12px 12px 17px
+                    margin-bottom: 30px
+                    position: relative
+                    a
+                        color: #000
+                        font-size: 1.2rem
+                        font-weight: 500
+                    &::before,
+                    &::after
+                        content: ""
+                        position: absolute
+                        left: 50%
+                        transform: translateX(-50%)
+                        background: #000
+                        box-sizing: content-box
+                    &::before
+                        width: 100%
+                        height: 2px
+                        bottom: 0
+                    &::after
+                        width: 12px
+                        height: 12px
+                        border-radius: 50%
+                        border: 4px solid #fff
+                        bottom: -8px
+                ul
+                    gap: 5px
+                    li
+                        a
+                            gap: 10px
+                            color: #000
+                            transition: 0.3s
+                            padding: 10px
+                            font-size: 0.88rem
+                            &:hover
+                                background: $light-gray-color
+                        a.active
+                            background: $light-gray-color
+                        .icon
+                            svg
+                        span
+        .page
+            background: $bg-color
+            padding-bottom: 30px
+            .header
+                background: #fff
+                .form
+                    position: relative
+                    input
+                        border: 1px solid #ccc
+                        padding: 7px 7px 7px 30px
+                        border-radius: 8px
+                        font-size: 0.8rem
+                        width: 170px
+                        outline: none
+                        color: $grey-color
+                        transition: 0.5s
+                        &:focus
+                            width: 190px
+                            &::placeholder
+                                color: #fff
+                    &::before
+                        content: "\f002"
+                        position: absolute
+                        font-family: "Font Awesome 5 Free"
+                        left: 10px
+                        top: 50%
+                        transform: translateY(-50%)
+                        font-size: 0.9rem
+                        color: #ccc
+                        font-weight: 900
+                .icons
+                    gap: 15px
+                    .profile-icon
+                        font-size: 1.3rem
+                        position: relative
+                        svg
+                        &::before
+                            content: ""
+                            position: absolute
+                            width: 10px
+                            height: 10px
+                            border-radius: 50%
+                            background: red
+                            right: -5px
+                            top: -1px
+                    .profile-img
+                        width: 32px
+                        height: 32px
+                        img
+            .main
+                padding: 0 10px
+                .main-title
+                    position: relative
+                    width: fit-content
+                    font-size: 2rem
+                    font-weight: 500
+                    padding: 10px 0
+                    margin: 20px 0 25px
+                    &::before,
+                    &::after
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        height: 3px
+                        left: 0
+                    &::before
+                        width: 120px
+                        background: #fff
+                    &::after
+                        width: 40px
+                        background: #000
+                .row
+                    .col-content
+                        border-radius: 10px
+                        background: #fff
+                        padding: 20px
+                        min-height: 420px
+                        margin-bottom: 20px
+                        .col-head
+                            gap: 10px
+                            h2
+                                font-size: 1.4rem
+                                font-weight: 500
+                            p
+                                margin: 0
+                                font-size: 0.9rem
+                        .col-body
+                            padding-top: 30px
+                            a.btn,
+                            input[type="submit"]
+                                background: $blue-color
+                                color: #fff
+                                display: block
+                                width: fit-content
+                                margin: 0 15px 0 auto
+                                border-radius: 10px
+                                font-size: 0.9rem
+                                padding: 3px 10px
+                                transition: 0.5s
+                                cursor: pointer
+                                &:hover
+                                    background: $blue-alt-color
+                    .welcome
+                        padding: 0
+                        .col-head,
+                        .col-body
+                            padding: 20px
+                        .col-head
+                            background: #eee
+                            .text
+                                gap: 10px
+                        .img
+                            width: 200px
+                        .col-body
+                            padding: 20px 0
+                            position: relative
+                            .img
+                                position: absolute
+                                top: calc(-30px )
+                                left: 20px
+                                width: 50px
+                                border: 4px solid #fff
+                                border-radius: 50%
+                                box-sizing: content-box
+                            .body-content
+                                border-top: 1px solid #eee
+                                border-bottom: 1px solid #eee
+                                padding: 30px 40px
+                                align-items: center
+                                margin: 35px 0
+                                .item
+                                    h5
+                                        font-size: 1rem
+                                    p
+                                        font-size: 0.9rem
+                    .quick-draft
+                        .col-body
+                            gap: 20px
+                            input[type="text"],
+                            textarea
+                                width: 100%
+                                background: #eee
+                                border: 0
+                                padding: 10px
+                                font-size: 0.8rem
+                                border-radius: 6px
+                                outline: none
+                                resize: none
+                                a
+                    .welcome,
+                    .quick-draft
+                        min-height: 400px
+                    .targets
+                        .col-body
+                            gap: 20px
+                            .item
+                                gap: 10px
+                                .icon
+                                    width: 100px
+                                    height: 80px
+                                    line-height: 80px
+                                    text-align: center
+                                    background: #CCE3FF
+                                    color: #0075FF
+                                    font-size: 1.3rem
+                                .progress-div
+                                    width: 100%
+                                    gap: 30px
+                                    span
+                                        font-size: 0.9rem
+                                    .progress
+                                        height: 4px
+                                        overflow: visible
+                                        position: relative
+                                        background: #CCE3FF !important
+                                        &::before
+                                            position: absolute
+                                            top: -28px
+                                            color: #000
+                                            font-size: 0.94rem
+                                            font-weight: 500
+                                            content: attr(data-value)
+                                            left: 0
+                                    .progress-bar
+                                        position: relative
+                                        overflow: visible
+                                        background: #0075FF
+                                        &::before,
+                                        &::after
+                                            position: absolute
+                                            right: -15px
+                                            top: -35px
+                                        &::after
+                                            content: attr(data-width)
+                                            background: #0075FF
+                                            color: #fff
+                                            font-size: 0.8rem
+                                            padding: 2px 3px
+                                            border-radius: 6px
+                                        &::before
+                                            content: ""
+                                            border-top: 5px solid #0075FF
+                                            border-right: 5px solid transparent
+                                            border-left: 5px solid transparent
+                                            border-bottom: 5px solid transparent
+                                            top: -12px
+                                            right: -2px
+                            .item2
+                                .icon
+                                    background: #FDECCE
+                                    color: $orange-color
+                                .progress
+                                    background: #FDECCE !important
+                                    .progress-bar
+                                        background: $orange-color
+                                        &::before
+                                            border-top-color: $orange-color
+                                        &::after
+                                            background: $orange-color
+                            .item3
+                                .icon
+                                    background: #D2F4DF
+                                    color: $green-color
+                                .progress
+                                    background: #D2F4DF !important
+                                    .progress-bar
+                                        background: $green-color
+                                        &::before
+                                            border-top-color: $green-color
+                                        &::after
+                                            background: $green-color
+                    .statistics
+                        .col-body
+                            .box
+                                text-align: center
+                                border: 1px solid #ccc
+                                border-radius: 10px
+                                padding: 15px 0
+                                margin-bottom: 15px
+                                gap: 5px
+                                .icon,
+                                h5
+                                    font-size: 1.5rem
+                                    font-weight: 500
+                                span
+                                    font-size: 0.9rem
+                            .box1
+                                .icon
+                                    svg
+                                        color: $orange-color
+                            .box2
+                                .icon
+                                    svg
+                                        color: $blue-color
+                            .box3
+                                .icon
+                                    svg
+                                        color: $green-color
+                            .box4
+                                .icon
+                                    svg
+                                        color: $red-color
+                    .latest-news
+                        .col-body
+                            gap: 20px
+                            .item
+                                .left
+                                    gap: 15px
+                                img
+                                    width: 100px
+                                    border-radius: 6px
+                                h5
+                                    font-size: 1rem
+                                    font-weight: 500
+                                    margin-bottom: 5px
+                                span
+                                    font-size: 0.8rem
+                                .btn
+                                    background: #eee
+                                    border-radius: 10px
+                                    font-size: 0.8rem
+                                &:not(:last-of-type)
+                                    border-bottom: 1px solid #eee
+                                    padding-bottom: 20px
+                    .tasks
+                        .col-body
+                            gap: 15px
+                            .item
+                                &:not(:last-of-type)
+                                    padding-bottom: 10px !important
+                                .info
+                                    span
+                                        font-size: 0.9rem
+                                a.btn
+                                    background: transparent
+                                    font-size: 1rem
+                                    svg
+                                        color: #000
+                                        transition: 0.5s
+                                    &:hover
+                                        svg
+                                            color: $red-color
+                            .item.done
+                                opacity: 0.4
+                                h5,
+                                span
+                                    text-decoration: line-through
+                    .top-search
+                        .col-body
+                            gap: 30px
+                            .item
+                                h5
+                                    font-size: 1rem
+                                .btn
+                                    font-size: 0.8rem
+                                    background: #eee
+                                    border-radius: 6px
+                                    padding: 3px 8px
+                                    cursor: text
+                                    span
+                    .uploads
+                        .col-body
+                            gap: 15px
+                            padding-top: 15px
+                            .item
+                                &:not(:last-of-type)
+                                    padding-bottom: 5px !important
+                                img
+                                    width: 40px
+                                    height: 40px
+                                .info
+                                    display: flex
+                                    flex-direction: column
+                    .latest-projects
+                        .col-body
+                            position: relative
+                            padding-left: 15px
+                            ul
+                                position: relative
+                                gap: 30px
+                                &::before
+                                    content: ""
+                                    position: absolute
+                                    background: $blue-color
+                                    height: 100%
+                                    width: 2px
+                                    left: 0
+                                li
+                                    position: relative
+                                    padding: 0 30px
+                                    &::before
+                                        content: ""
+                                        position: absolute
+                                        left: -12px
+                                        top: 50%
+                                        width: 20px
+                                        height: 20px
+                                        background: #fff
+                                        border: 2px solid #fff
+                                        border-radius: 50%
+                                        transform: translateY(-50%)
+                                        box-sizing: content-box
+                                        outline: 2px solid $blue-color
+                                        transition: 0.5s
+                                li.done
+                                    &::before
+                                        background: $blue-color
+                                li.current
+                                    &::before
+                                        animation: changeBG 0.7s ease-in-out infinite alternate
+                            .img
+                                position: absolute
+                                right: 0
+                                width: 160px
+                                opacity: 0.1
+                                bottom: 0
+                    .latest-projects,
+                    .reminders,
+                    .latest-posts,
+                    .social-stats
+                        min-height: 335px
+                    .reminders
+                        .col-body
+                            ul
+                                gap: 16px
+                                li
+                                    position: relative
+                                    padding: 0 40px
+                                    &::before,
+                                    &::after
+                                        content: ""
+                                        position: absolute
+                                        left: 0
+                                    &::before
+                                        top: 50%
+                                        width: 15px
+                                        height: 15px
+                                        background: $blue-color
+                                        border-radius: 50%
+                                        transform: translateY(-50%)
+                                    &::after
+                                        top: 0
+                                        height: 100%
+                                        background: $blue-color
+                                        width: 2px
+                                        left: 25px
+                                    h5
+                                        font-size: 0.9rem
+                                        font-weight: 500
+                                        margin-bottom: 10px
+                                    span
+                                        font-size: 0.75rem
+                                li
+                                    &:nth-of-type(2)
+                                        &::before,
+                                        &::after
+                                            background: $green-color
+                                    &:nth-of-type(3)
+                                        &::before,
+                                        &::after
+                                            background: $orange-color
+                                    &:nth-of-type(4)
+                                        &::before,
+                                        &::after
+                                            background: $red-color
+                    .latest-posts
+                        .col-head
+                            .head
+                                gap: 15px
+                                margin-top: 20px
+                                .img
+                                    width: 50px
+                                    height: 50px
+                                .info
+                                    gap: 8px
+                                    h5
+                                        font-size: 1rem
+                                        font-weight: 500
+                                    span
+                                        font-size: 0.9rem
+                        .col-body
+                            p.text
+                                padding: 20px 0
+                                border-top: 1px solid #eee
+                                border-bottom: 1px solid #eee
+                                margin-bottom: 20px
+                                line-height: 1.5
+                            .footer
+                                .item
+                                    gap: 3px
+                                    color: #ccc
+                                    align-items: center
+                    .social-stats
+                        .col-body
+                            gap: 10px
+                            padding-top: 20px
+                            .item
+                                background: rgba(29, 161, 242 , 0.2)
+                                .left
+                                    gap: 20px
+                                    .icon
+                                        background: #1da1f2
+                                        color: #fff
+                                        width: 55px
+                                        height: 55px
+                                        line-height: 55px
+                                        font-size: 1.9rem
+                                        text-align: center
+                                        transition: 0.3s
+                                        &:hover
+                                            transform: rotate(5deg)
+                                        svg
+                                    span
+                                        color: #1da1f2
+                                a.btn
+                                    background: #1da1f2
+                                    height: fit-content
+                            .item2
+                                background: rgba(24 ,119, 242 , 0.2) !important
+                                .icon
+                                    background: #1877f2 !important
+                                span
+                                    color: #1877f2 !important
+                                a.btn
+                                    background: #1877f2
+                            .item3
+                                background: rgba(255 ,0, 0 , 0.2) !important
+                                .icon
+                                    background: $red-color !important
+                                span
+                                    color: $red-color !important
+                                a.btn
+                                    background: $red-color
+                            .item4
+                                background: rgba(0 ,119, 181 , 0.2) !important
+                                .icon
+                                    background: #0077b5 !important
+                                span
+                                    color: #0077b5 !important
+                                a.btn
+                                    background: #0077b5
+                .projects
+                    padding: 20px
+                    h2
+                        margin-bottom: 20px
+                        font-size: 1.5rem
+                        font-weight: 600
+                    img
+                        width: 30px
+                        height: 30px
+                        border-radius: 50%
+                        border: 2px solid #fff
+                        box-sizing: content-box
+                        &:not(:first-of-type)
+                            margin-left: -20px
+                    .table-div
+                        overflow-x: auto
+                    table
+                        min-width: 1000px
+                        td
+                            padding: 15px
+                            font-size: 0.9rem
+                            border: 1px solid #eee
+                        thead
+                            background: #eee
+                            font-weight: bold
+                            tr
+                                td
+                        tbody
+                            tr
+                                transition: 0.5s
+                                td
+                                    font-weight: 500
+                                    span.btn
+                                        font-size: 0.8rem
+                                        color: #fff
+                                        padding: 3px 10px
+                                        border-radius: 10px
+                                    span.btn.pending
+                                        background-color: $orange-color
+                                    span.btn.in-progress
+                                        background-color: $blue-color
+                                    span.btn.completed
+                                        background-color: $green-color
+                                    span.btn.rejected
+                                        background-color: $red-color
+
+                                &:hover
+                                    background: #faf7f7
+/*========== media query ==========*/
+@import 'media'
+@import 'settings'
+@import 'profile'
+@import 'projects'
+@import 'courses'
+@import 'friends'
+@import 'files'
+@import 'plans'

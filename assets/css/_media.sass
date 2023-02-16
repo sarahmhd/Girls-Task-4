@@ -1,0 +1,65 @@
+
+/* For large devices */
+// @media only screen and (min-width: 1001px)
+
+/* For medium devices */
+// @media only screen and (min-width: 769px) and (max-width: 1199px)
+
+/* For medium and small devices */
+@media only screen and (max-width: 991px)
+    body
+        .body
+            .sidebar
+                width: 60px
+                .sidebar-content
+                    .logo
+                        padding: 12px 0 30px
+                        &::after
+                            width: 8px
+                            height: 8px
+                            border: 3px solid #fff
+                            bottom: -6px
+                        a
+                            font-size: 0.9rem
+                    ul
+                        li
+                            span
+                                display: none
+// // /* For small devices */
+@media only screen and (max-width: 768px)
+    body
+        .body
+            flex-direction: column
+            .sidebar
+                width: 100%
+                .sidebar-content
+                    display: flex
+                    gap: 10px
+                    .logo
+                        margin-bottom: 0
+                        padding: 5px 0
+                    ul
+                        flex-direction: row !important
+                        gap: 2px
+            .page
+                .main
+                    .main-content
+                        .row
+                            .welcome
+                                .item
+                                    margin-bottom: 15px
+                                    h5
+                                        margin-bottom: 5px
+                            .latest-news.sm-screen
+                                text-align: center
+                                .col-body
+                                    .item
+                                        flex-direction: column
+                                        gap: 10px
+                                        .left
+                                            flex-direction: column
+                                            align-items: center
+                            .latest-posts
+                                .col-body
+                                    .text
+                                        text-align: center

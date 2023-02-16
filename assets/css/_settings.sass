@@ -1,0 +1,209 @@
+
+.body
+    .page
+        .main
+            .main-content
+                .row
+                    .col-content
+                        label
+                            input[type="checkbox"]
+                                display: none
+                                appearance: none
+                                &:checked
+                                    & + .checkbox-icon
+                                        background: $blue-color
+                                        &::before
+                                            content: "\f00c"
+                                            color: $blue-color
+                                            background: #fff
+                                            left: calc( 100% - 28px )
+                            .checkbox-icon
+                                width: 75px
+                                height: 31px
+                                background: #ccc
+                                border-radius: 30pc
+                                position: relative
+                                &::before
+                                    content: "\f00d"
+                                    font-family: "Font Awesome 5 Free"
+                                    font-weight: 900
+                                    position: absolute
+                                    color: #ccc
+                                    background: #fff
+                                    width: 24px
+                                    height: 24px
+                                    border-radius: 50%
+                                    line-height: 24px
+                                    text-align: center
+                                    left: 4px
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    cursor: pointer
+                                    transition: 0.5s
+                    .site-control
+                        .col-body
+                            .info
+                                h5
+                                    font-size: 1rem
+                                    margin-bottom: 5px
+                                span
+                                    font-size: 0.84rem
+                        textarea
+                            margin-top: 25px
+                            outline: none
+                            border: 1px solid #ccc
+                            font-size: 0.8rem
+                            padding: 10px
+                            letter-spacing: 1px
+                            border-radius: 6px
+                            resize: none
+                    .general-info
+                        .col-body
+                            .form
+                                gap: 15px
+                                .form-group
+                                    gap: 10px
+                                    label
+                                        font-size: 0.9rem
+                                        color: #888
+                                    input
+                                        font-size: 0.8rem
+                                        padding: 8px
+                                        border-radius: 6px
+                                        border: 1px solid #ccc
+                                        outline: none
+                                    .change
+                                        input[type="email"]
+                                            background: #f0f4f8
+                                            color: #bbb
+                                            cursor: alias
+                                        input[type="submit"]
+                                            background: transparent
+                                            border: 0
+                                            color: $blue-color
+                                            font-size: 0.98rem
+                    .site-control
+                        .col-body
+                            padding-top: 20px !important
+                            .item
+                                padding: 10px 0 15px
+                                margin-bottom: 10px
+                                &:not(:last-of-type)
+                                    border-bottom: 1px solid #eee
+                                a.btn
+                                    margin: 0 !important
+                    .social-info
+                        .col-body
+                            .body-content
+                                gap: 15px
+                            .item
+                                height: 40px
+                                flex-direction: row-reverse
+                                .icon
+                                    color: #888
+                                    border-right: 0
+                                    border-radius: 6px 0 0 6px
+                                    width: 40px
+                                    height: 41px
+                                    line-height: 40px
+                                    text-align: center
+                                    transition: 0.5s
+                                    svg
+                                input,
+                                .icon
+                                    border: 1px solid #ddd
+                                    background: #f6f6f6
+                                input
+                                    outline: none
+                                    padding: 10px
+                                    font-size: 0.8rem
+                                    width: 100%
+                                    border-radius: 0 6px 6px 0
+                                    border-left: 0
+                                    &:focus
+                                        &+ .icon
+                                            color: #000
+                    .widgets-control,
+                    .backup-manager
+                        .col-body
+                            .body-content
+                                gap: 12px
+                                .item
+                                    gap: 10px
+                                    input
+                                        appearance: none
+                                        display: none
+                                        &:checked
+                                            + label
+                                                &::before
+                                                    content: "\f00c"
+                                                    color: #fff
+                                                    background: $blue-color
+                                                    display: flex
+                                                    justify-content: center
+                                                    align-items: center
+                                                    transform: scale(1) rotate(-360deg)
+                                                &::after
+                                                    border-color: $blue-color
+                                    label
+                                        position: relative
+                                        padding-left: 30px
+                                        &::before,
+                                        &::after
+                                            content: ""
+                                            position: absolute
+                                            font-family: "Font Awesome 5 Free"
+                                            font-weight: 900
+                                            inset: 0
+                                            font-size: 0.8rem
+                                            width: 20px
+                                            height: 20px
+                                            border-radius: 4px
+                                        &::before
+                                            transform: scale(0)
+                                            transition: 0.5s ease-in-out
+                                        &::after
+                                            border: 2px solid #ccc
+                    .backup-manager
+                        .col-body
+                            .body-content
+                                .item
+                                    input
+                                        &:checked
+                                            + label
+                                                &::before
+                                                    content: ""
+                                                    width: 10px
+                                                    height: 10px
+                                                    left: 5px
+                                                    top: 5px
+                                    label
+                                        &::after,
+                                        &::before
+                                            border-radius: 50%
+                                        &::before
+                                            transform: scale(0)
+                                .item.row
+                                    input
+                                    label
+                                        svg
+                        .col-footer
+                            margin: 30px 20px 0
+                            padding-top: 20px
+                            border-top: 1px solid #eee
+                            input
+                                display: none
+                                appearance: none
+                                &:checked
+                                    + label
+                                        border-color: $blue-color
+                                        color: $blue-color
+                            label
+                                padding: 15px 20px
+                                border: 2px solid #ccc
+                                border-radius: 6px
+                                cursor: pointer
+                                svg
+        .main.sett
+            .col-content
+                min-height: 380px !important

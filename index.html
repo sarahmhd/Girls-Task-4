@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="task 3 from Elzero Web School">
+  <!--=============== BootsTrap ===============-->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!--=============== Animate ===============-->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <!--=============== NORMALIZE ===============-->
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="body d-flex">
+    <!--=============== SIDEBAR ===============-->
+    <div class="sidebar">
+      <div class="container">
+        <div class="sidebar-content">
+          <div class="logo text-center">
+            <a href="#">Elzero</a>
+          </div>
+          <ul class="list-unstyled d-flex flex-column">
+            <li>
+              <a href="index.html" class="d-flex active">
+                <div class="icon">
+                  <i class="fa-solid fa-chart-bar"></i>
+                </div>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings.html" class="d-flex">
+                <div class="icon">
+                  <i class="fa-solid fa-gear"></i>
+                </div>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="profile.html" class="d-flex">
+                <div class="icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" class="d-flex">
+                <div class="icon">
+                  <i class="fa-solid fa-diagram-project"></i>
+                </div>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" class="d-flex">
+                <div class="icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="friends.html" class="d-flex">
+                <div class="icon">
+                  <i class="fa-regular fa-circle-user"></i>
+                </div>
+                <span>Friends</span>
+              </a>
+            </li>
+            <li>
+              <a href="files.html" class="d-flex">
+                <div class="icon">
+                  <i class="fa-regular fa-file"></i>
+                </div>
+                <span>Files</span>
+              </a>
+            </li>
+            <li>
+              <a href="plans.html" class="d-flex">
+                <div class="icon">
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <span>Plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--=============== PAGE ===============-->
+    <div class="page w-100">
+      <!--=============== HEADER ===============-->
+      <div class="header py-3">
+        <div class="container">
+          <div class="header-content d-flex justify-content-between align-items-center">
+            <div class="form">
+              <input type="text" placeholder="Type A Keyword">
+            </div>
+            <div class="icons d-flex align-items-center">
+              <div class="profile-icon">
+                <i class="fa-sharp fa-regular fa-bell"></i>
+              </div>
+              <div class="profile-img">
+                <img src="assets/imgs/avatar.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=============== MAIN ===============-->
+      <div class="main">
+        <div class="container">
+          <div class="main-content">
+            <h1 class="main-title">Dashboard</h1>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="col-content welcome bg-white">
+                  <div class="col-head m-0 d-flex justify-content-between">
+                    <div class="text d-flex flex-column">
+                      <h2>Welcome</h2>
+                      <p class="text-black-50">Elzero</p>
+                    </div>
+                    <div class="img rounded-0">
+                      <img src="assets/imgs/welcome.png" alt="welcome">
+                    </div>
+                  </div>
+                  <div class="col-body">
+                    <div class="img">
+                      <img src="assets/imgs/avatar.png" alt="">
+                    </div>
+                    <div class="body-content text-center row">
+                      <div class="col-md-4 item">
+                        <h5>Osama Elzero</h5>
+                        <p class="text-black-50">Developer</p>
+                      </div>
+                      <div class="col-md-4 item">
+                        <h5>80</h5>
+                        <p class="text-black-50">Projects</p>
+                      </div>
+                      <div class="col-md-4 item">
+                        <h5>$8500</h5>
+                        <p class="text-black-50">Earned</p>
+                      </div>
+                    </div>
+                    <a href="profile.html" class="btn">profile</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content quick-draft bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Quick Draft</h2>
+                    <p class="text-black-50">Write A Draft For Your Ideas</p>
+                  </div>
+                  <form action="" class="form col-body d-flex flex-column">
+                    <input type="text" placeholder="Title">
+                    <textarea name="" id="" cols="30" rows="7" placeholder="Your Thought"></textarea>
+                    <input type="submit" value="Save" class="btn">
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content targets bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Yearly Targets</h2>
+                    <p class="text-black-50">Targets Of The Year</p>
+                  </div>
+                  <div class="col-body d-flex flex-column">
+                    <div class="item item1 d-flex align-items-center">
+                      <div class="icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                      </div>
+                      <div class="progress-div d-flex flex-column">
+                        <span class="text-black-50">Money</span>
+                        <div class="progress w-100" data-value="$20.000">
+                          <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100" data-width="80%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item item2 d-flex align-items-center">
+                      <div class="icon">
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                      <div class="progress-div d-flex flex-column">
+                        <span class="text-black-50">Projects</span>
+                        <div class="progress w-100" data-value="24">
+                          <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100" data-width="55%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item item3 d-flex align-items-center">
+                      <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="progress-div d-flex flex-column">
+                        <span class="text-black-50">Team</span>
+                        <div class="progress w-100" data-value="12">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100" data-width="75%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content statistics bg-white">
+                  <div class="col-head d-flex flex-column ">
+                    <h2>Tickets Statistics</h2>
+                    <p class="text-black-50">Everything About Support Tickets</p>
+                  </div>
+                  <div class="col-body row">
+                    <div class="col-md-6">
+                      <div class="box box1 d-flex flex-column">
+                        <div class="icon">
+                          <i class="fa-regular fa-rectangle-list"></i>
+                        </div>
+                        <h5>2500</h5>
+                        <span class="text-black-50">Total</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="box box2 d-flex flex-column">
+                        <div class="icon">
+                          <i class="fa-solid fa-spinner"></i>
+                        </div>
+                        <h5>500</h5>
+                        <span class="text-black-50">Pending</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="box box3 d-flex flex-column">
+                        <div class="icon">
+                          <i class="fa-sharp fa-regular fa-circle-check"></i>
+                        </div>
+                        <h5>1900</h5>
+                        <span class="text-black-50">Closed</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="box box4 d-flex flex-column">
+                        <div class="icon">
+                          <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                        <h5>100</h5>
+                        <span class="text-black-50">Deleted</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content latest-news sm-screen bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Latest News</h2>
+                  </div>
+                  <div class="col-body d-flex flex-column">
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/news-01.png" alt="news-01">
+                        <div class="info">
+                          <h5>Created SASS Section</h5>
+                          <span class="text-black-50">New SASS Examples & Tutorials</span>
+                        </div>
+                      </div>
+                      <div class="btn">3 Days Ago</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/news-02.png" alt="news-02">
+                        <div class="info">
+                          <h5>Changed The Design</h5>
+                          <span class="text-black-50">A Brand New Website Design</span>
+                        </div>
+                      </div>
+                      <div class="btn">5 Days Ago</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/news-03.png" alt="news-03">
+                        <div class="info">
+                          <h5>Team Increased</h5>
+                          <span class="text-black-50">3 Developers Joined The Team</span>
+                        </div>
+                      </div>
+                      <div class="btn">7 Days Ago</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/news-04.png" alt="news-04">
+                        <div class="info">
+                          <h5>Added Payment Gateway</h5>
+                          <span class="text-black-50">Many New Payment Gateways Added</span>
+                        </div>
+                      </div>
+                      <div class="btn">9 Days Ago</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content latest-news tasks bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Latest Tasks</h2>
+                  </div>
+                  <div class="col-body d-flex flex-column">
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="info">
+                        <h5>Record One New Video</h5>
+                        <span class="text-black-50">Record Python Create Exe Project</span>
+                      </div>
+                      <a href="#" class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </a>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="info">
+                        <h5>Write Article</h5>
+                        <span class="text-black-50">Write Low Level vs High Level Languages</span>
+                      </div>
+                      <a href="#" class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </a>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="info">
+                        <h5>Finish Project</h5>
+                        <span class="text-black-50">Publish Academy Programming Project</span>
+                      </div>
+                      <a href="#" class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </a>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between done">
+                      <div class="info">
+                        <h5>Attend The Meeting</h5>
+                        <span class="text-black-50">Attend The Project Business Analysis Meeting</span>
+                      </div>
+                      <a href="#" class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </a>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="info">
+                        <h5>Finish Lesson</h5>
+                        <span class="text-black-50">Finish Teaching Flex Box</span>
+                      </div>
+                      <a href="#" class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content top-search bg-white">
+                  <div class="col-head d-flex flex-column gap-3">
+                    <h2>Top Search Items</h2>
+                    <div class="text-black-50 d-flex justify-content-between">
+                      <p>Keyword</p>
+                      <p>Search Count</p>
+                    </div>
+                  </div>
+                  <div class="col-body d-flex flex-column">
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <h5>Programming</h5>
+                      <div href="#" class="btn">
+                        <span>220</span>
+                      </div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <h5>JavaScript</h5>
+                      <div href="#" class="btn">
+                        <span>180</span>
+                      </div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <h5>PHP</h5>
+                      <div href="#" class="btn">
+                        <span>160</span>
+                      </div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <h5>Code</h5>
+                      <div href="#" class="btn">
+                        <span>145</span>
+                      </div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <h5>Design</h5>
+                      <div href="#" class="btn">
+                        <span>110</span>
+                      </div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <h5>Logic</h5>
+                      <div href="#" class="btn">
+                        <span>95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content latest-news uploads bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Latest Uploads</h2>
+                  </div>
+                  <div class="col-body d-flex flex-column">
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/pdf.svg" alt="">
+                        <div class="info">
+                          <h5>my-file.pdf</h5>
+                          <span class="text-black-50">Elzero</span>
+                        </div>
+                      </div>
+                      <div class="btn">2.9mb</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/avi.svg" alt="">
+                        <div class="info">
+                          <h5>My-Video-File.avi</h5>
+                          <span class="text-black-50">Admin</span>
+                        </div>
+                      </div>
+                      <div class="btn">4.9mb</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/psd.svg" alt="">
+                        <div class="info">
+                          <h5>My-Psd-File.pdf</h5>
+                          <span class="text-black-50">Osama</span>
+                        </div>
+                      </div>
+                      <div class="btn">4.5mb</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/zip.svg" alt="">
+                        <div class="info">
+                          <h5>My-Zip-File.pdf</h5>
+                          <span class="text-black-50">User</span>
+                        </div>
+                      </div>
+                      <div class="btn">8.9mb</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/dll.svg" alt="">
+                        <div class="info">
+                          <h5>My-DLL-File.pdf</h5>
+                          <span class="text-black-50">Admin</span>
+                        </div>
+                      </div>
+                      <div class="btn">4.9mb</div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-between">
+                      <div class="left d-flex">
+                        <img src="assets/imgs/eps.svg" alt="">
+                        <div class="info">
+                          <h5>My-Eps-File.pdf</h5>
+                          <span class="text-black-50">Designer</span>
+                        </div>
+                      </div>
+                      <div class="btn">8.9mb</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content latest-projects bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Latest Project Progress</h2>
+                  </div>
+                  <div class="col-body">
+                    <ul class="d-flex flex-column list-unstyled">
+                      <li class="done">Got The Project</li>
+                      <li class="done">Started The Project</li>
+                      <li class="done">The Project About To Finish</li>
+                      <li class="current">Test The Project</li>
+                      <li>Finish The Project & Get Money</li>
+                    </ul>
+                    <div class=" img">
+                      <img src="assets/imgs/project.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content reminders bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Reminders</h2>
+                  </div>
+                  <div class="col-body">
+                    <ul class="d-flex flex-column list-unstyled">
+                      <li class="d-flex flex-column">
+                        <h5>Check My Tasks List</h5>
+                        <span class="text-black-50">28/09/2022 - 12:00am</span>
+                      </li>
+                      <li class="d-flex flex-column">
+                        <h5>Check My Projects</h5>
+                        <span class="text-black-50">26/10/2022 - 12:00am</span>
+                      </li>
+                      <li class="d-flex flex-column">
+                        <h5>Call All My Clients</h5>
+                        <span class="text-black-50">05/11/2022 - 12:00am</span>
+                      </li>
+                      <li class="d-flex flex-column">
+                        <h5>Finish The Development Workshop</h5>
+                        <span class="text-black-50">20/12/2022 - 12:00am</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content latest-posts bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Latest Post</h2>
+                    <div class="head d-flex">
+                      <div class="img">
+                        <img src="assets/imgs/avatar.png" alt="">
+                      </div>
+                      <div class="info d-flex flex-column">
+                        <h5>Osama Elzero</h5>
+                        <span class="text-black-50">About 3 Hours Ago</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-body">
+                    <p class="text">
+                      You can fool all of the people some of the time, and some of the people all of the time, but you
+                      can't fool all of the
+                      people all of the time.
+                    </p>
+                    <div class="footer d-flex justify-content-between">
+                      <div class="item d-flex">
+                        <div class="icon">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <span class="text-black-50">1.8K</span>
+                      </div>
+                      <div class="item d-flex">
+                        <div class="icon">
+                          <i class="fa-regular fa-comments"></i>
+                        </div>
+                        <span class="text-black-50">500</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="col-content social-stats bg-white">
+                  <div class="col-head d-flex flex-column">
+                    <h2>Social Media Stats</h2>
+                  </div>
+                  <div class="col-body d-flex flex-column">
+                    <div class="item item1 d-flex justify-content-between align-items-center">
+                      <div class="left d-flex align-items-center">
+                        <div class="icon">
+                          <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <span>90K Followers</span>
+                      </div>
+                      <a href="#" class="btn">Follow</a>
+                    </div>
+                    <div class="item item2 d-flex justify-content-between align-items-center">
+                      <div class="left d-flex align-items-center">
+                        <div class="icon">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <span>2M Like</span>
+                      </div>
+                      <a href="#" class="btn">Like</a>
+                    </div>
+                    <div class="item item3 d-flex justify-content-between align-items-center">
+                      <div class="left d-flex align-items-center">
+                        <div class="icon">
+                          <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <span>1M Subs</span>
+                      </div>
+                      <a href="#" class="btn">Subscribe</a>
+                    </div>
+                    <div class="item item4 d-flex justify-content-between align-items-center">
+                      <div class="left d-flex align-items-center">
+                        <div class="icon">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <span>1M Subs</span>
+                      </div>
+                      <a href="#" class="btn">Follow</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects bg-white">
+              <h2>Projects</h2>
+              <div class="table-div">
+                <table class="w-100">
+                  <thead>
+                    <tr>
+                      <td>Name</td>
+                      <td>Finish Date</td>
+                      <td>Client</td>
+                      <td>Price</td>
+                      <td>Team</td>
+                      <td>Status</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ministry Wikipedia</td>
+                      <td>10 May 2022</td>
+                      <td>Ministry</td>
+                      <td>$5300</td>
+                      <td>
+                        <img src="assets/imgs/team-01.png" alt="">
+                        <img src="assets/imgs/team-02.png" alt="">
+                        <img src="assets/imgs/team-03.png" alt="">
+                        <img src="assets/imgs/team-04.png" alt="">
+                      </td>
+                      <td>
+                        <span class="btn pending">Pending</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Elzero Shop</td>
+                      <td>12 Oct 2021</td>
+                      <td>Elzero Company</td>
+                      <td>$1500</td>
+                      <td>
+                        <img src="assets/imgs/team-01.png" alt="">
+                        <img src="assets/imgs/team-02.png" alt="">
+                        <img src="assets/imgs/team-04.png" alt="">
+                      </td>
+                      <td>
+                        <span class="btn in-progress">In Progress</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Bouba App</td>
+                      <td>05 Sep 2021</td>
+                      <td>Bouba</td>
+                      <td>$800</td>
+                      <td>
+                        <img src="assets/imgs/team-02.png" alt="">
+                        <img src="assets/imgs/team-03.png" alt="">
+                      </td>
+                      <td>
+                        <span class="btn completed">Completed</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mahmoud Website</td>
+                      <td>22 May 2021</td>
+                      <td>Mahmoud</td>
+                      <td>$600</td>
+                      <td>
+                        <img src="assets/imgs/team-01.png" alt="">
+                        <img src="assets/imgs/team-02.png" alt="">
+                      </td>
+                      <td>
+                        <span class="btn completed">Completed</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sayed Website</td>
+                      <td>24 May 2021</td>
+                      <td>Sayed</td>
+                      <td>$300</td>
+                      <td>
+                        <img src=" assets/imgs/team-01.png" alt="">
+                        <img src="assets/imgs/team-03.png" alt="">
+                      </td>
+                      <td>
+                        <span class="btn rejected">Rejected</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Arena Application</td>
+                      <td>01 Mar 2021</td>
+                      <td>Arena Company</td>
+                      <td>$2600</td>
+                      <td>
+                        <img src="assets/imgs/team-01.png" alt="">
+                        <img src="assets/imgs/team-02.png" alt="">
+                        <img src="assets/imgs/team-03.png" alt="">
+                        <img src="assets/imgs/team-04.png" alt="">
+                      </td>
+                      <td>
+                        <span class="btn completed">Completed</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
